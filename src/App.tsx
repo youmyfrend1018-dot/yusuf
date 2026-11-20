@@ -124,15 +124,15 @@ function App() {
       </div>
 
    
-      <section className="relative mt-16 flex min-h-screen w-full items-center justify-center overflow-hidden border-t border-zinc-800">
+      <section className="relative mt-16 flex min-h-screen w-full items-center justify-center overflow-hidden border-t ">
         <video
-          src="https://www.pexels.com/download/video/34928867/"
+            src="https://www.pexels.com/download/video/36527017/"
           autoPlay
           loop
           muted
           className="absolute inset-0 h-full w-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 "></div>
 
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-6xl">

@@ -144,58 +144,76 @@ function App() {
         </div>
       </section>
 
-     
-      <footer id="footer" className="border-t border-zinc-800 bg-zinc-950 py-10 text-zinc-400">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 sm:grid-cols-3">
-        
+      {/* Contact (Aloqa) qismi */}
+      <footer className="border-t border-zinc-800 bg-zinc-950 px-4 py-16">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 md:grid-cols-2">
           <div>
-            <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500 text-xs font-bold text-zinc-950">
-                S
-              </div>
-              <span className="text-base font-bold text-white">Store</span>
-            </div>
-            <p className="mt-3 text-xs leading-relaxed text-zinc-500">
-              Eng sifatli mahsulotlar va qulay xizmatlar platformasi.
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">
+              Biz bilan bog'laning
+            </h2>
+            <p className="mt-3 text-sm text-zinc-400 sm:text-base">
+              Savollaringiz yoki takliflaringiz bo'lsa, quyidagi ma'lumotlar orqali murojaat qilishingiz mumkin.
             </p>
+
+            <div className="mt-6 space-y-3 text-sm text-zinc-300">
+              <p>
+                <span className="font-semibold text-emerald-500">Manzil:</span>{" "}
+                Toshkent shahri, Chilonzor tumani
+              </p>
+              <p>
+                <span className="font-semibold text-emerald-500">Telefon:</span>{" "}
+                +998 90 123 45 67
+              </p>
+              <p>
+                <span className="font-semibold text-emerald-500">Email:</span>{" "}
+                info@store.uz
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h4 className="text-sm font-semibold text-white">Bo'limlar</h4>
-            <ul className="mt-3 space-y-2 text-xs">
-              <li>
-                <a href="#top" className="transition hover:text-white">
-                  Bosh sahifa
-                </a>
-              </li>
-              <li>
-                <a href="#footer" className="transition hover:text-white">
-                  Aloqa
-                </a>
-              </li>
-            </ul>
-          </div>
+          <form
+            onSubmit={(e) => e.preventDefault()}
+            className="space-y-4 rounded-2xl border border-zinc-800 bg-zinc-900/60 p-6"
+          >
+            <div>
+              <label className="mb-1 block text-sm text-zinc-300">
+                Ismingiz
+              </label>
+              <input
+                type="text"
+                placeholder="Ismingizni kiriting"
+                className="w-full rounded-xl border border-zinc-700 bg-zinc-800 px-4 py-2 text-sm text-white placeholder-zinc-500 focus:border-emerald-500 focus:outline-none"
+              />
+            </div>
 
+            <div>
+              <label className="mb-1 block text-sm text-zinc-300">
+                Telefon yoki Email
+              </label>
+              <input
+                type="text"
+                placeholder="+998 or Email"
+                className="w-full rounded-xl border border-zinc-700 bg-zinc-800 px-4 py-2 text-sm text-white placeholder-zinc-500 focus:border-emerald-500 focus:outline-none"
+              />
+            </div>
 
-          <div>
-            <h4 className="text-sm font-semibold text-white">Bog'lanish</h4>
-            <ul className="mt-3 space-y-2 text-xs">
-              <li>
-                <a href="#telegram" className="transition hover:text-white">
-                  Telegram
-                </a>
-              </li>
-              <li>
-                <a href="#instagram" className="transition hover:text-white">
-                  Instagram
-                </a>
-              </li>
-            </ul>
-          </div>
+        
+
+            <button
+              type="submit"
+              className="w-full cursor-pointer rounded-xl bg-emerald-500 px-4 py-2.5 text-sm font-semibold text-zinc-950 transition hover:bg-emerald-400"
+            >
+              Yuborish
+            </button>
+          </form>
+        </div>
+
+        <div className="mx-auto mt-12 max-w-5xl border-t border-zinc-800 pt-6 text-center text-xs text-zinc-500">
+          © {new Date().getFullYear()} Store. Barcha huquqlar himoyalangan.
         </div>
       </footer>
     </div>
   );
-};
+}
 
 export default App;
